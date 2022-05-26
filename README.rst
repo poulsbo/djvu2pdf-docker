@@ -19,7 +19,7 @@ Run details
 
 ::
 
-  docker run --rm -u $(id -u):$(id -g) -v $(pwd):/opt/work ilyabystrov/djvu2pdf filename.djvu filename.pdf
+  docker run --rm -u $(id -u):$(id -g) -v $(pwd):/opt/work poulsbo/djvu2pdf filename.djvu filename.pdf
 
 * `--rm` option - removing container after execution
 * `-u $(id -u):$(id -g)` - run process with the same UID and GID
@@ -33,7 +33,7 @@ Put the following line into `~/.bashrc` or a similar configuration file:
 
 ::
 
-  alias djvu2pdf='docker run --rm -u $(id -u):$(id -g) -v $(pwd):/opt/work ilyabystrov/djvu2pdf'
+  alias djvu2pdf='docker run --rm -u $(id -u):$(id -g) -v $(pwd):/opt/work poulsbo/djvu2pdf'
 
 It will allow using the short command
 
